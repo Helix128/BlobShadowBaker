@@ -1,7 +1,7 @@
 # ShadowBaker
  Simple tool for baking blob shadow textures in Unity!
  
- #Usage
+# Usage
  Open the Shadow Baker window from the Tools section of the top layout.
  
  Parameters:
