@@ -4,7 +4,7 @@
 # Usage
  Open the Shadow Baker window from the Tools section of the top layout.
  
- Parameters:
+# Parameters:
  -Target
  
  The target Transform of the object that you want to create a shadow.
@@ -18,6 +18,8 @@
  
  Gaussian blur effect for the shadow Texture
  
+ # Output
  The shadow output will be generated at Assets/Shadows/(ObjectName)(ObjectID).png
  
+ # Extra
  This asset also includes a shadow projector shader and a projector falloff texture.
