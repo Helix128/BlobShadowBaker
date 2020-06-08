@@ -1,6 +1,8 @@
 # ShadowBaker
  Simple tool for baking blob shadow textures in Unity!
  
+ [Demo GIF](https://gyazo.com/5ce594c8f29729b1841618a4561612d3)
+ 
 # Usage
  Open the Shadow Baker window from the Tools section of the top layout.
  
@@ -27,4 +29,4 @@
  
  # Extra
  This asset also includes a shadow projector shader and a projector falloff texture.
- [image](https://gyazo.com/5ce594c8f29729b1841618a4561612d3)
+
