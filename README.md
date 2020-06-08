@@ -27,4 +27,4 @@
  
  # Extra
  This asset also includes a shadow projector shader and a projector falloff texture.
- [image](username.github.com/repository/img/image.jpg)
+ [image](https://gyazo.com/5ce594c8f29729b1841618a4561612d3)
