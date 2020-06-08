@@ -9,6 +9,10 @@
  
  The target Transform of the object that you want to create a shadow.
  
+ -Texture Size
+ 
+ Shadow texture resolution. Higher means more quality but a larger file size.
+ 
  -Orthographic Scale
  
  Scale of the camera used for rendering the shadow. 
