@@ -28,6 +28,10 @@
  
  Gaussian blur effect for the shadow Texture
  
+ -Bake Children
+ 
+ Enable/disable children appearing in the shadow.
+ 
  # Output
  The shadow output will be generated at Assets/Shadows/(ObjectName)(ObjectID).png
  
@@ -35,8 +39,6 @@
  This asset also includes a shadow projector shader and a projector falloff texture.
  
  # Future features (work in progress)
- 
- -Bake children in shadow
  
  -Custom shadow direction
  
