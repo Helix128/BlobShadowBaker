@@ -30,4 +30,6 @@
  
  # Extra
  This asset also includes a shadow projector shader and a projector falloff texture.
+ 
+ Created by Helix a.k.a Diegoatari8 with Unity 2019
 
