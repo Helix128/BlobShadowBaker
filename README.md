@@ -34,7 +34,7 @@
  # Extra
  This asset also includes a shadow projector shader and a projector falloff texture.
  
- # W.I.P features
+ # Future features (work in progress)
  
  -Bake children in shadow
  
