@@ -5,6 +5,9 @@
  [Demo GIF 2](https://gyazo.com/25377563c485102c4fdbdfa44dd7f5a2)
  
 # Usage
+
+ Required setup: Create a new layer called "Shadowcaster".
+
  Open the Shadow Baker window from the Tools section of the top layout.
  
 # Parameters:
@@ -30,4 +33,14 @@
  
  # Extra
  This asset also includes a shadow projector shader and a projector falloff texture.
+ 
+ # Future features (work in progress)
+ 
+ -Bake children in shadow
+ 
+ -Custom shadow direction
+ 
+ # About
+ 
+ Created by Helix a.k.a Diegoatari8 with Unity 2019
 
