@@ -38,6 +38,12 @@
  # Extra
  This asset also includes a shadow projector shader and a projector falloff texture.
  
+ # Known Issues
+ 
+ "An infinite import loop has been detected. The following Assets were imported multiple times, but no changes to them have been detected. Please check if any custom code is trying to import them" and "Could not create asset from Assets/Shadows/(your object).png: File could not be read"
+ 
+ This issue only happens the first time you try to bake a shadow. If there is no shadow texture at the Shadows folder,try again and it will bake correctly.
+ 
  # Future features (work in progress)
  
  -Custom shadow direction
