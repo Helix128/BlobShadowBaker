@@ -6,7 +6,7 @@
  
 # Usage
 
- Required setup: Create a new layer called Shadowcaster at "User Layer 8".
+ Required setup: Create a new layer called "Shadowcaster".
 
  Open the Shadow Baker window from the Tools section of the top layout.
  
