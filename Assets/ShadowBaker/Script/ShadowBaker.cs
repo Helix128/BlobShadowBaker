@@ -78,7 +78,7 @@ public class ShadowBaker : MonoBehaviour
         tex.ReadPixels(new Rect(0, 0, rTex.width, rTex.height), 0, 0);
         tex.Apply();
         tex.wrapMode = TextureWrapMode.Clamp;
-     
+      
         return tex;
     }
 }
