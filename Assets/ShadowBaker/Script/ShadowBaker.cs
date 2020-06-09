@@ -8,7 +8,7 @@ public class ShadowBaker : MonoBehaviour
 {
   
 
-    public static void BakeShadow(int ObjectLayer,Transform Target,int textureSize,float OrthographicSize,float Blur)
+    public static void BakeShadow(int ObjectLayer,Transform Target,int textureSize,float OrthographicSize,float Blur,bool bakeChildren)
     {
         if (Target != null)
         {
@@ -24,7 +24,14 @@ public class ShadowBaker : MonoBehaviour
             int GOLayer = Target.gameObject.layer;
             ShadowCam.cullingMask = 3 << 4;
             Target.gameObject.layer = 4;
+            if (bakeChildren)
+            {
+                foreach(Renderer mesh in Target.GetComponentsInChildren<Renderer>()) {
 
+                    mesh.gameObject.layer = 4;
+
+                }
+            }
 
 
 
@@ -32,7 +39,7 @@ public class ShadowBaker : MonoBehaviour
             ShadowCam.targetTexture = rt;
 
             ShadowCam.transform.forward = -Vector3.up;
-            ShadowCam.transform.position = Target.position + Vector3.up * 25;
+            ShadowCam.transform.position = Target.position + Vector3.up *(25+(10*OrthographicSize));
 
             ShadowCam.Render();
 
@@ -44,6 +51,15 @@ public class ShadowBaker : MonoBehaviour
             DestroyImmediate(ShadowCam.gameObject);
             Target.gameObject.layer = GOLayer;
             Target.eulerAngles = OriginalGOEuler;
+            if (bakeChildren)
+            {
+                foreach (Renderer mesh in Target.GetComponentsInChildren<Renderer>())
+                {
+
+                    mesh.gameObject.layer = GOLayer;
+
+                }
+            }
         }
         else
         {

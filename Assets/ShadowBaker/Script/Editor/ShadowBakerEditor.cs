@@ -10,8 +10,9 @@ public class ShadowBakerEditor : EditorWindow
     public int textureSize = 1024;
     public float OrthographicSize = 1;
     public float ShadowBlur;
-   // public RenderTexture rt;
-    // Add menu named "My Window" to the Window menu
+    public bool includeChildren;
+
+
     [MenuItem("Tools/Shadow Baker")]
     static void Init()
     {
@@ -32,9 +33,11 @@ public class ShadowBakerEditor : EditorWindow
         OrthographicSize = EditorGUILayout.FloatField(OrthographicSize);
         EditorGUILayout.LabelField("Shadow Blur");
         ShadowBlur = EditorGUILayout.FloatField(ShadowBlur);
+        EditorGUILayout.LabelField("Bake Children");
+        includeChildren = EditorGUILayout.Toggle(includeChildren);
         if (GUILayout.Button("Bake"))
         {
-            ShadowBaker.BakeShadow(ObjectLayer, Target, textureSize, OrthographicSize,ShadowBlur);
+            ShadowBaker.BakeShadow(ObjectLayer, Target, textureSize, OrthographicSize,ShadowBlur,includeChildren);
         }
     }
 }
