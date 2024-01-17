@@ -63,10 +63,13 @@ public class BlobShadowBakerUtils
                 {
                     materials.Add(mesh.sharedMaterials);
                     layers.Add(mesh.gameObject.layer);
+                    Material[] tempMaterials = new Material[mesh.sharedMaterials.Length];
                     for (int i = 0; i < mesh.sharedMaterials.Length; i++)
                     {
-                        mesh.sharedMaterials[i] = shadowMaterial;
+                        tempMaterials[i] = shadowMaterial;
+
                     }
+                    mesh.sharedMaterials = tempMaterials;
                     mesh.gameObject.layer = 30;
                 }
             }
