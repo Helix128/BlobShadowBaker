@@ -34,6 +34,6 @@ The tool is located at the editor tab Tools->Shadow Baker.
  The shadow output will be generated at BlobShadowBaker/Output/(ObjectName+ObjectID).png
  
  # Extra
- This asset also includes a [shadow decal shader by Ronja](https://github.com/ronja-tutorials/ShaderTutorials/blob/master/Assets/054_Unlit_Decals/UnlitDynamicDecal.shader) for the Built-in RP.
+ This asset also includes a [shadow decal shader by Ronja Böhringer](https://github.com/ronja-tutorials/ShaderTutorials/blob/master/Assets/054_Unlit_Decals/UnlitDynamicDecal.shader) for the Built-in RP.
 
 
