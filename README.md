@@ -1,5 +1,5 @@
 # Blob Shadow Baker
- Simple tool for baking blob shadow textures in Unity!
+ Simple tool for baking blob shadow textures in Unity! Now with URP support!
 
 # (OLD) Demo GIFs
  [Demo GIF 1](https://gyazo.com/5ce594c8f29729b1841618a4561612d3)
